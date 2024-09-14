@@ -19,15 +19,16 @@
       }
 
       nav ul {
-        position: absolute;
-        bottom: 555px;
-        left: 47%;
+        position: fixed;
+        top: 20px; /* Adjust to place the ul vertically */
+        left: 50%;
         transform: translateX(-50%);
         display: flex;
         justify-content: center;
         list-style-type: none;
         padding: 0;
         margin: 0;
+        z-index: 9999; /* Ensure it's on top */
       }
 
       nav li {
@@ -37,20 +38,27 @@
       table {
         border-collapse: collapse;
         width: 50%;
-        margin: 0 auto;
-        margin-top: -20%;
+        margin: 5% auto; /* Use this to center the table and add space from the top */
       }
 
       th,
       td {
-        border: 1px solid #64ff6a;
+        border: 2px solid #64ff6a;
         padding: 10px;
         text-align: center;
+        box-shadow: 2px 2px 0 #000;
       }
 
       table.center {
         margin-left: auto;
         margin-right: auto;
+      }
+
+      h1 {
+        text-align: center;
+        color: #64ff6a;
+        text-shadow: 2px 2px 0 #000;
+        margin-top: -30%;
       }
     </style>
   </head>
@@ -107,20 +115,31 @@
         </ul>
       </svg>
     </nav>
+    <h1>Coding Resources</h1>
 
     <!-- Table section remains outside nav -->
     <table class="center">
       <tr>
-        <th>Languages</th>
+        <th>Resource</th>
+        <th>Link</th>
       </tr>
       <tr>
-        <td>Python</td>
+        <td>Mozilla Developer Network</td>
+        <td><a href="https://developer.mozilla.org/en-US/docs/Web">LINK</a></td>
       </tr>
       <tr>
-        <td>Java</td>
+        <td>Digital Ocean Tutorials</td>
+        <td>
+          <a href="https://www.digitalocean.com/community/tutorials">LINK</a>
+        </td>
       </tr>
       <tr>
-        <td>HTML</td>
+        <td>W3Schools</td>
+        <td><a href="https://www.w3schools.com/">LINK</a></td>
+      </tr>
+      <tr>
+        <td>GeekforGeeks</td>
+        <td><a href="https://www.geeksforgeeks.org/">LINK</a></td>
       </tr>
     </table>
   </body>

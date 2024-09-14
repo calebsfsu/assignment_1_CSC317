@@ -19,15 +19,16 @@
       }
 
       nav ul {
-        position: absolute;
-        bottom: 555px;
-        left: 47%;
+        position: fixed;
+        top: 20px; /* Adjust to place the ul vertically */
+        left: 50%;
         transform: translateX(-50%);
         display: flex;
         justify-content: center;
         list-style-type: none;
         padding: 0;
         margin: 0;
+        z-index: 9999; /* Ensure it's on top */
       }
 
       h1 {
@@ -110,7 +111,16 @@
     <p class="css-question">This is how you do it:</p>
     <pre
       class="css-question"
-      style="border-width: 2px; border-style: solid; border-color: #ba6bff"
+      style="
+        border-width: 5px;
+        border-style: solid;
+        border-color: #ba6bff;
+        border-radius: 5px;
+        padding: 8px;
+        margin: 20px auto;
+        max-width: 40%;
+        box-shadow: 2px 2px 0 #000;
+      "
     ><code>
   &lt;!doctype html&gt;
   &lt;html lang="en-GB"&gt;
@@ -127,7 +137,19 @@
     </code></pre>
     <h2 class="js-question">How to Apply Javascript to HTML</h2>
     <p class="js-question">This is how you do it:</p>
-    <pre class="js-question"><code>
+    <pre
+      class="js-question"
+      style="
+        border-width: 5px;
+        border-style: solid;
+        border-color: #ba6bff;
+        border-radius: 5px;
+        padding: 8px;
+        margin: 20px auto;
+        max-width: 40%;
+        box-shadow: 2px 2px 0 #000;
+      "
+    ><code>
       &lt;script&gt;src="path/to/my/script.js"&lt;/script&gt;
       </code></pre>
   </body>
