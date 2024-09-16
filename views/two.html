@@ -28,7 +28,7 @@
         list-style-type: none;
         padding: 0;
         margin: 0;
-        z-index: 9999; /* Ensure it's on top */
+        z-index: 1; /* Ensure it's on top */
       }
 
       nav li {
@@ -39,6 +39,8 @@
         border-collapse: collapse;
         width: 50%;
         margin: 5% auto; /* Use this to center the table and add space from the top */
+        z-index: 2;
+        position: relative;
       }
 
       th,
@@ -64,7 +66,7 @@
   </head>
   <body style="background-color: #ffa100" height="100vh">
     <!-- Navigation section inside nav element -->
-    <nav>
+    <nav class="menue">
       <svg
         class="full-width-svg"
         version="1.1"
@@ -108,38 +110,87 @@
         </text>
         <ul>
           <li>
-            <a href="/assignment_1_CSC317/index.html">HOME</a>
+            <a
+              style="
+                background-color: #ffa100;
+                color: #64ff6a;
+                border-radius: 5px;
+                text-decoration: none;
+                padding: 5px 10px;
+              "
+              href="/index.html"
+            >
+              HOME
+            </a>
           </li>
-          <li><a href="/assignment_1_CSC317/views/two.html"">TWO</a></li>
-          <li><a href="/assignment_1_CSC317/views/three.html"">THREE</a></li>
+          <li>
+            <a
+              style="
+                background-color: #ffa100;
+                color: #64ff6a;
+                border-radius: 5px;
+                text-decoration: none;
+                padding: 5px 10px;
+              "
+              href="/views/two.html"
+            >
+              TWO
+            </a>
+          </li>
+          <li>
+            <a
+              style="
+                background-color: #ffa100;
+                color: #64ff6a;
+                border-radius: 5px;
+                text-decoration: none;
+                padding: 5px 10px;
+              "
+              href="/views/three.html"
+            >
+              THREE
+            </a>
+          </li>
         </ul>
       </svg>
     </nav>
-    <h1>Coding Resources</h1>
+    <h1>Favorite Coding Resources</h1>
 
     <!-- Table section remains outside nav -->
     <table class="center">
       <tr>
-        <th>Resource</th>
+        <th>Coding Resource</th>
         <th>Link</th>
       </tr>
       <tr>
-        <td>Mozilla Developer Network</td>
-        <td><a href="https://developer.mozilla.org/en-US/docs/Web">LINK</a></td>
+        <td>Udemy</td>
+        <td>
+          <a
+            style="color: #64ff6a; text-decoration: none"
+            href="https://www.udemy.com/"
+            >LINK</a
+          >
+        </td>
       </tr>
       <tr>
-        <td>Digital Ocean Tutorials</td>
+        <td>Youtube</td>
         <td>
-          <a href="https://www.digitalocean.com/community/tutorials">LINK</a>
+          <a
+            style="color: #64ff6a; text-decoration: none"
+            href="https://www.youtube.com"
+            >LINK</a
+          >
         </td>
       </tr>
       <tr>
         <td>W3Schools</td>
-        <td><a href="https://www.w3schools.com/">LINK</a></td>
-      </tr>
-      <tr>
-        <td>GeekforGeeks</td>
-        <td><a href="https://www.geeksforgeeks.org/">LINK</a></td>
+        <td>
+          <a
+            style="color: #64ff6a; text-decoration: none"
+            href="https://www.w3schools.com/"
+            >LINK</a
+          >
+        </td>
       </tr>
     </table>
   </body>

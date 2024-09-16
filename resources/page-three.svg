@@ -1,0 +1,18 @@
+<svg
+        class="heart-svg"
+        viewBox="0 0 100 100"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill="none"
+          stroke="#50fff9"
+          d="M 10 10 H 90 V 90 H 10 L 10 10"/>
+        
+
+        <circle r="5" fill="#50fff9">
+          <animateMotion
+            dur="10s"
+            repeatCount="indefinite"
+            path="M 10 10 H 90 V 90 H 10 L 10 10"/>
+        </circle>
+      </svg>
